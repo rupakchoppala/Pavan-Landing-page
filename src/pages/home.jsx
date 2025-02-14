@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import Services from "./services";
 
 export default function HomePage() {
   return (
-    <div className="bg-white  min-h-screen min-w-screen font-inter  flex flex-col">
+    <div className="bg-white  min-h-screen min-w-screen font-inter  flex flex-col overflow-x-hidden">
       {/* Navbar */}
       <Navbar />
 
@@ -36,7 +37,8 @@ export default function HomePage() {
 
       </div>
       </main>
-      
+    
+     
     </div>
   );
 }

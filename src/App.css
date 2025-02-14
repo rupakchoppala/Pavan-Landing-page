@@ -4,4 +4,14 @@
 @theme {
     --font-inter: "Inter", serif;
     --font-inspiration: "Inspiration", serif;
+    --color-border-color: linear-gradient(to bottom, #F76680, #57007B);
+  }
+  .gradient-border {
+    --border-gradient: linear-gradient(to bottom, #F76680, #57007B); /* Define the gradient */
+    /* Border width */
+     /* Optional: For rounded borders */
+    background: var(--border-gradient); /* Set the gradient as the background */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
